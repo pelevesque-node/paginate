@@ -7,7 +7,7 @@ Makes calculations useful for creating pagination links.
 
 ## Node Repository
 
-[https://www.npmjs.com/package/@pelevesque/paginate](https://www.npmjs.com/package/@pelevesque/paginate)
+https://www.npmjs.com/package/@pelevesque/paginate
 
 ## Installation
 
