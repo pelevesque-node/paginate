@@ -29,13 +29,13 @@ https://www.npmjs.com/package/@pelevesque/paginate
 ```js
 const paginate = require('@pelevesque/paginate')
 
-const numLinks = 10 // number of links to be created by paginate
+const numLinksToCreate = 10
 const currentPage = 3
 const perPage = 10
 const numItems = 300
 const url = 'http://www.localhost.com/?page='
 
-const paginateObject = paginate(numLinks, currentPage, perPage, numItems, url)
+const paginateObject = paginate(numLinksToCreate, currentPage, perPage, numItems, url)
 
 // result
 paginateObject = {
