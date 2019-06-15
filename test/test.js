@@ -6,7 +6,7 @@ const paginate = require('../index')
 
 describe('#paginate()', () => {
   describe('left bleeding', () => {
-    it('numLinks < totalPages, and numItems/perPage === x.0', () => {
+    it('numLinks < totalPages && numItems/perPage === x.0', () => {
       const result = paginate(10, 3, 10, 300, 'www.localhost.com/?page=')
       const expected = {
         numLinks: 10,
@@ -36,7 +36,7 @@ describe('#paginate()', () => {
       expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
     })
 
-    it('numLinks < totalPages, and numItems/perPage === x.x', () => {
+    it('numLinks < totalPages && numItems/perPage === x.x', () => {
       const result = paginate(10, 3, 10, 306, 'www.localhost.com/?page=')
       const expected = {
         numLinks: 10,
@@ -68,7 +68,7 @@ describe('#paginate()', () => {
   })
 
   describe('right bleeding', () => {
-    it('numLinks < totalPages, and numItems/perPage === x.0', () => {
+    it('numLinks < totalPages && numItems/perPage === x.0', () => {
       const result = paginate(5, 9, 20, 200, 'www.localhost.com/?page=')
       const expected = {
         numLinks: 5,
@@ -93,7 +93,7 @@ describe('#paginate()', () => {
       expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
     })
 
-    it('numLinks < totalPages, and numItems/perPage === x.x', () => {
+    it('numLinks < totalPages && numItems/perPage === x.x', () => {
       const result = paginate(5, 9, 20, 203, 'www.localhost.com/?page=')
       const expected = {
         numLinks: 5,
@@ -120,7 +120,7 @@ describe('#paginate()', () => {
   })
 
   describe('centered', () => {
-    it('numLinks < totalPages, and numItems/perPage === x.0', () => {
+    it('numLinks < totalPages && numItems/perPage === x.0', () => {
       const result = paginate(6, 11, 5, 100, 'www.localhost.com/?page=')
       const expected = {
         numLinks: 6,
@@ -146,7 +146,7 @@ describe('#paginate()', () => {
       expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
     })
 
-    it('numLinks < totalPages, and numItems/perPage === x.x', () => {
+    it('numLinks < totalPages && numItems/perPage === x.x', () => {
       const result = paginate(6, 11, 5, 102, 'www.localhost.com/?page=')
       const expected = {
         numLinks: 6,
