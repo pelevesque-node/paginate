@@ -4,7 +4,7 @@
 
 # paginate
 
-Makes calculations useful for creating pagination links.
+Makes calculations useful for creating website pagination links.
 
 ## Node Repository
 
