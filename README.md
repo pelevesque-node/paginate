@@ -28,7 +28,9 @@ https://www.npmjs.com/package/@pelevesque/paginate
 
 ```js
 const paginate = require('@pelevesque/paginate')
+```
 
+```js
 const numLinksToCreate = 10
 const currentPage = 3
 const perPage = 10
