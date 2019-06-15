@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/pelevesque/paginate.svg?branch=master)](https://travis-ci.org/pelevesque/paginate)
 [![Coverage Status](https://coveralls.io/repos/github/pelevesque/paginate/badge.svg?branch=master)](https://coveralls.io/github/pelevesque/paginate?branch=master)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 # paginate
 
