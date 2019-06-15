@@ -64,3 +64,7 @@ paginateObject = {
   numFollowingPages: 27
 }
 ```
+
+## Integration with Adonis.js
+
+https://forum.adonisjs.com/t/tutorial-beginner-pagination-hack/1267
