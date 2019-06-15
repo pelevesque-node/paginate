@@ -31,9 +31,7 @@
     "chai": "^4.2.0",
     "coveralls": "^3.0.4",
     "istanbul": "^0.4.5",
-    "mocha": "^6.1.4"
-  },
-  "dependencies": {
+    "mocha": "^6.1.4",
     "standard": "^12.0.1"
   }
 }
