@@ -16,7 +16,7 @@ https://www.npmjs.com/package/@pelevesque/paginate
 
 ## Tests
 
-### Unit Tests
+### Standard Style & Unit Tests
 
 `npm test`
 
