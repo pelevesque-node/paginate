@@ -31,13 +31,13 @@ const paginate = require('@pelevesque/paginate')
 ```
 
 ```js
-const numLinksToCreate = 10
+const numLinks = 10
 const currentPage = 3
 const perPage = 10
 const numItems = 300
 const url = 'http://www.localhost.com/?page='
 
-const paginateObject = paginate(numLinksToCreate, currentPage, perPage, numItems, url)
+const paginateObject = paginate(numLinks, currentPage, perPage, numItems, url)
 
 // result
 paginateObject = {

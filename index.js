@@ -36,9 +36,9 @@ function calculateFirstLink (numLinks, currentPage, lastPage) {
   return currentPage - numPreviousPages
 }
 
-module.exports = (numLinksToCreate, currentPage, perPage, numItems, url) => {
+module.exports = (numLinks, currentPage, perPage, numItems, url) => {
   const lastPage = Math.ceil(numItems / perPage)
-  const numLinks = Math.min(numLinksToCreate, lastPage)
+  const numLinks = Math.min(numLinks, lastPage)
   const firstLink = calculateFirstLink(numLinks, currentPage, lastPage)
   const links = makeLinks(numLinks, firstLink, currentPage, url)
   return {
