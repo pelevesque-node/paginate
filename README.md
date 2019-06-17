@@ -31,19 +31,19 @@ const paginate = require('@pelevesque/paginate')
 ```
 
 ```js
-const numLinks = 10
+const numLinks = 10 // number of links to others pages
 const currentPage = 3
-const perPage = 10
+const numItemsPerPage = 10
 const numItems = 300
 const url = 'http://www.localhost.com/?page='
 
-const paginateObject = paginate(numLinks, currentPage, perPage, numItems, url)
+const paginateObject = paginate(numLinks, currentPage, numItemsPerPage, numItems, url)
 
 // result
 paginateObject = {
   numLinks: 10,
   currentPage: 3,
-  perPage: 10,
+  numItemsPerPage: 10,
   numItems: 300,
   url: 'www.localhost.com/?page=',
   links: [

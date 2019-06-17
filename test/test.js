@@ -5,13 +5,51 @@ const expect = require('chai').expect
 const paginate = require('../index')
 
 describe('#paginate()', () => {
+  it('should work with numItems === 0', () => {
+    const result = paginate(10, 3, 10, 0, 'www.localhost.com/?page=')
+    const expected = {
+      numLinks: 0,
+      currentPage: 3,
+      numItemsPerPage: 10,
+      numItems: 0,
+      url: 'www.localhost.com/?page=',
+      links: [],
+      firstPageLink: 0,
+      lastPageLink: 0,
+      firstPage: 0,
+      lastPage: 0,
+      numPreviousPages: 0,
+      numFollowingPages: 0
+    }
+    expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
+  })
+
+  it('should work with numLinks === 0', () => {
+    const result = paginate(0, 3, 10, 300, 'www.localhost.com/?page=')
+    const expected = {
+      numLinks: 0,
+      currentPage: 3,
+      numItemsPerPage: 10,
+      numItems: 300,
+      url: 'www.localhost.com/?page=',
+      links: [],
+      firstPageLink: 0,
+      lastPageLink: 0,
+      firstPage: 0,
+      lastPage: 0,
+      numPreviousPages: 0,
+      numFollowingPages: 0
+    }
+    expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
+  })
+
   describe('left bleeding', () => {
     it('numLinks < totalPages && numItems/perPage === x.0', () => {
       const result = paginate(10, 3, 10, 300, 'www.localhost.com/?page=')
       const expected = {
         numLinks: 10,
         currentPage: 3,
-        perPage: 10,
+        numItemsPerPage: 10,
         numItems: 300,
         url: 'www.localhost.com/?page=',
         links: [
@@ -41,7 +79,7 @@ describe('#paginate()', () => {
       const expected = {
         numLinks: 10,
         currentPage: 3,
-        perPage: 10,
+        numItemsPerPage: 10,
         numItems: 306,
         url: 'www.localhost.com/?page=',
         links: [
@@ -73,7 +111,7 @@ describe('#paginate()', () => {
       const expected = {
         numLinks: 5,
         currentPage: 9,
-        perPage: 20,
+        numItemsPerPage: 20,
         numItems: 200,
         url: 'www.localhost.com/?page=',
         links: [
@@ -98,7 +136,7 @@ describe('#paginate()', () => {
       const expected = {
         numLinks: 5,
         currentPage: 9,
-        perPage: 20,
+        numItemsPerPage: 20,
         numItems: 203,
         url: 'www.localhost.com/?page=',
         links: [
@@ -125,7 +163,7 @@ describe('#paginate()', () => {
       const expected = {
         numLinks: 6,
         currentPage: 11,
-        perPage: 5,
+        numItemsPerPage: 5,
         numItems: 100,
         url: 'www.localhost.com/?page=',
         links: [
@@ -151,7 +189,7 @@ describe('#paginate()', () => {
       const expected = {
         numLinks: 6,
         currentPage: 11,
-        perPage: 5,
+        numItemsPerPage: 5,
         numItems: 102,
         url: 'www.localhost.com/?page=',
         links: [
@@ -171,43 +209,5 @@ describe('#paginate()', () => {
       }
       expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
     })
-  })
-
-  it('should work with numItems === 0', () => {
-    const result = paginate(10, 3, 10, 0, 'www.localhost.com/?page=')
-    const expected = {
-      numLinks: 0,
-      currentPage: 3,
-      perPage: 10,
-      numItems: 0,
-      url: 'www.localhost.com/?page=',
-      links: [],
-      firstPageLink: 0,
-      lastPageLink: 0,
-      firstPage: 0,
-      lastPage: 0,
-      numPreviousPages: 0,
-      numFollowingPages: 0
-    }
-    expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
-  })
-
-  it('should work with numLinks === 0', () => {
-    const result = paginate(0, 3, 10, 300, 'www.localhost.com/?page=')
-    const expected = {
-      numLinks: 0,
-      currentPage: 3,
-      perPage: 10,
-      numItems: 300,
-      url: 'www.localhost.com/?page=',
-      links: [],
-      firstPageLink: 0,
-      lastPageLink: 0,
-      firstPage: 0,
-      lastPage: 0,
-      numPreviousPages: 0,
-      numFollowingPages: 0
-    }
-    expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
   })
 })
