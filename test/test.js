@@ -4,7 +4,7 @@
 const expect = require('chai').expect
 const paginate = require('../index')
 
-describe('all tests for paginate()', () => {
+describe('#paginate()', () => {
   it('should work with numItems === 0', () => {
     const result = paginate(10, 3, 10, 0, 'www.localhost.com/?page=')
     const expected = {
