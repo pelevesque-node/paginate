@@ -1,6 +1,16 @@
-[![Build Status](https://travis-ci.org/pelevesque/paginate.svg?branch=master)](https://travis-ci.org/pelevesque/paginate)
-[![Coverage Status](https://coveralls.io/repos/github/pelevesque/paginate/badge.svg?branch=master)](https://coveralls.io/github/pelevesque/paginate?branch=master)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[build-badge]:    https://travis-ci.org/pelevesque-node/paginate.svg?branch=master
+[build]:          https://travis-ci.org/pelevesque-node/paginate
+[coverage-badge]: https://coveralls.io/repos/github/pelevesque-node/paginate/badge.svg?branch=master
+[coverage]:       https://coveralls.io/github/pelevesque-node/paginate?branch=master
+[standard-badge]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
+[standard]:       https://standardjs.com
+[mit-badge]:      https://img.shields.io/badge/License-MIT-yellow.svg
+[mit]:            http://opensource.org/licenses/MIT
+
+[![][badge-badge]][badge]
+[![][coverage-badge]][coverage]
+[![][standard-badge]][standard]
+[![][mit-badge]][mit]
 
 # paginate
 
