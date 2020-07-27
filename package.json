@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pelevesque/paginate.git"
+    "url": "git+https://github.com/pelevesque-node/paginate.git"
   },
   "keywords": [
     "pagination",
@@ -23,9 +23,9 @@
   "author": "Pierre-Emmanuel Lévesque <pierre.e.levesque@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pelevesque/paginate/issues"
+    "url": "https://github.com/pelevesque-node/paginate/issues"
   },
-  "homepage": "https://github.com/pelevesque/paginate#readme",
+  "homepage": "https://github.com/pelevesque-node/paginate#readme",
   "directories": {
     "test": "test"
   },
