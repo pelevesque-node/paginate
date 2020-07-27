@@ -7,7 +7,7 @@
 [mit-badge]:      https://img.shields.io/badge/License-MIT-yellow.svg
 [mit]:            http://opensource.org/licenses/MIT
 
-[![][badge-badge]][badge]
+[![][build-badge]][build]
 [![][coverage-badge]][coverage]
 [![][standard-badge]][standard]
 [![][mit-badge]][mit]
