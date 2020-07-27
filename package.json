@@ -1,7 +1,7 @@
 {
   "name": "@pelevesque/paginate",
   "version": "0.0.10",
-  "description": "Makes calculations useful for creating website pagination links.",
+  "description": "Makes useful calculations for creating website pagination links.",
   "main": "index.js",
   "engines": {
     "node": ">=9.0.0"
