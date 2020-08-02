@@ -78,7 +78,7 @@ paginateObject = {
 
 ## Integration with Adonis.js
 
-https://forum.adonisjs.com/t/tutorial-beginner-pagination-hack/1267
+https://github.com/adonisjs/core/discussions/1381
 
 ## Copyright
 
