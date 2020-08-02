@@ -88,8 +88,6 @@ Copyright (c) 2018-2020, Pierre-Emmanuel Lévesque
 
 MIT
 
-</hr>
-
 <div align="center">
-  Built with ❤︎ by <a href="https://github.com/pelevesque">Pierre-Emmmanuel Lévesque</a>
+  <sub>Built with ❤︎ by <a href="https://github.com/pelevesque">Pierre-Emmmanuel Lévesque</a></sub>
 </div>
