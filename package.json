@@ -51,7 +51,7 @@
     "pagination",
     "links"
   ],
-  "author": "Pierre-Emmanuel Lévesque <pierre.e.levesque@gmail.com>",
+  "author": "Pierre-Emmanuel Lévesque <me@pelevesque.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pelevesque-node/paginate/issues"
