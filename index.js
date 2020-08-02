@@ -7,7 +7,7 @@ function makeLinks (numLinks, firstLink, currentPage, url) {
     links.push({
       page: page,
       active: page === currentPage,
-      url: url + page
+      url: url + page,
     })
   }
   return links
@@ -53,6 +53,6 @@ module.exports = (numLinks, currentPage, numItemsPerPage, numItems, url) => {
     firstPage: numLinks ? 1 : 0,
     lastPage: numLinks ? lastPage : 0,
     numPreviousPages: numLinks ? currentPage - 1 : 0,
-    numFollowingPages: numLinks ? lastPage - currentPage : 0
+    numFollowingPages: numLinks ? lastPage - currentPage : 0,
   }
 }

@@ -19,7 +19,7 @@ describe('#paginate()', () => {
       firstPage: 0,
       lastPage: 0,
       numPreviousPages: 0,
-      numFollowingPages: 0
+      numFollowingPages: 0,
     }
     expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
   })
@@ -38,7 +38,7 @@ describe('#paginate()', () => {
       firstPage: 0,
       lastPage: 0,
       numPreviousPages: 0,
-      numFollowingPages: 0
+      numFollowingPages: 0,
     }
     expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
   })
@@ -62,14 +62,14 @@ describe('#paginate()', () => {
           { page: 7, active: false, url: 'www.localhost.com/?page=7' },
           { page: 8, active: false, url: 'www.localhost.com/?page=8' },
           { page: 9, active: false, url: 'www.localhost.com/?page=9' },
-          { page: 10, active: false, url: 'www.localhost.com/?page=10' }
+          { page: 10, active: false, url: 'www.localhost.com/?page=10' },
         ],
         firstPageLink: 1,
         lastPageLink: 10,
         firstPage: 1,
         lastPage: 30,
         numPreviousPages: 2,
-        numFollowingPages: 27
+        numFollowingPages: 27,
       }
       expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
     })
@@ -92,14 +92,14 @@ describe('#paginate()', () => {
           { page: 7, active: false, url: 'www.localhost.com/?page=7' },
           { page: 8, active: false, url: 'www.localhost.com/?page=8' },
           { page: 9, active: false, url: 'www.localhost.com/?page=9' },
-          { page: 10, active: false, url: 'www.localhost.com/?page=10' }
+          { page: 10, active: false, url: 'www.localhost.com/?page=10' },
         ],
         firstPageLink: 1,
         lastPageLink: 10,
         firstPage: 1,
         lastPage: 31,
         numPreviousPages: 2,
-        numFollowingPages: 28
+        numFollowingPages: 28,
       }
       expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
     })
@@ -119,14 +119,14 @@ describe('#paginate()', () => {
           { page: 7, active: false, url: 'www.localhost.com/?page=7' },
           { page: 8, active: false, url: 'www.localhost.com/?page=8' },
           { page: 9, active: true, url: 'www.localhost.com/?page=9' },
-          { page: 10, active: false, url: 'www.localhost.com/?page=10' }
+          { page: 10, active: false, url: 'www.localhost.com/?page=10' },
         ],
         firstPageLink: 6,
         lastPageLink: 10,
         firstPage: 1,
         lastPage: 10,
         numPreviousPages: 8,
-        numFollowingPages: 1
+        numFollowingPages: 1,
       }
       expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
     })
@@ -144,14 +144,14 @@ describe('#paginate()', () => {
           { page: 8, active: false, url: 'www.localhost.com/?page=8' },
           { page: 9, active: true, url: 'www.localhost.com/?page=9' },
           { page: 10, active: false, url: 'www.localhost.com/?page=10' },
-          { page: 11, active: false, url: 'www.localhost.com/?page=11' }
+          { page: 11, active: false, url: 'www.localhost.com/?page=11' },
         ],
         firstPageLink: 7,
         lastPageLink: 11,
         firstPage: 1,
         lastPage: 11,
         numPreviousPages: 8,
-        numFollowingPages: 2
+        numFollowingPages: 2,
       }
       expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
     })
@@ -172,14 +172,14 @@ describe('#paginate()', () => {
           { page: 10, active: false, url: 'www.localhost.com/?page=10' },
           { page: 11, active: true, url: 'www.localhost.com/?page=11' },
           { page: 12, active: false, url: 'www.localhost.com/?page=12' },
-          { page: 13, active: false, url: 'www.localhost.com/?page=13' }
+          { page: 13, active: false, url: 'www.localhost.com/?page=13' },
         ],
         firstPageLink: 8,
         lastPageLink: 13,
         firstPage: 1,
         lastPage: 20,
         numPreviousPages: 10,
-        numFollowingPages: 9
+        numFollowingPages: 9,
       }
       expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
     })
@@ -198,14 +198,14 @@ describe('#paginate()', () => {
           { page: 10, active: false, url: 'www.localhost.com/?page=10' },
           { page: 11, active: true, url: 'www.localhost.com/?page=11' },
           { page: 12, active: false, url: 'www.localhost.com/?page=12' },
-          { page: 13, active: false, url: 'www.localhost.com/?page=13' }
+          { page: 13, active: false, url: 'www.localhost.com/?page=13' },
         ],
         firstPageLink: 8,
         lastPageLink: 13,
         firstPage: 1,
         lastPage: 21,
         numPreviousPages: 10,
-        numFollowingPages: 10
+        numFollowingPages: 10,
       }
       expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
     })

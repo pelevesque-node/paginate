@@ -28,10 +28,10 @@ https://www.npmjs.com/package/@pelevesque/paginate
 
 Command                      | Description
 ---------------------------- | ------------
-`npm test` or `npm run test` | All Tests Below
-`npm run cover`              | Standard Style
-`npm run standard`           | Coverage
-`npm run unit`               | Unit Tests
+`npm test` or `npm run test` | all tests below
+`npm run cover`              | coverage
+`npm run standardx`          | standardx
+`npm run unit`               | unit tests
 
 ## Usage
 
@@ -65,14 +65,14 @@ paginateObject = {
     { page: 7,  active: false, url: 'www.localhost.com/?page=7'  },
     { page: 8,  active: false, url: 'www.localhost.com/?page=8'  },
     { page: 9,  active: false, url: 'www.localhost.com/?page=9'  },
-    { page: 10, active: false, url: 'www.localhost.com/?page=10' }
+    { page: 10, active: false, url: 'www.localhost.com/?page=10' },
   ],
   firstPageLink: 1,
   lastPageLink: 10,
   firstPage: 1,
   lastPage: 30,
   numPreviousPages: 2,
-  numFollowingPages: 27
+  numFollowingPages: 27,
 }
 ```
 

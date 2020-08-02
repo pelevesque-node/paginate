@@ -6,10 +6,41 @@
   "engines": {
     "node": ">=10.0.0"
   },
+  "eslintConfig": {
+    "globals": {
+      "describe": "readonly",
+      "it": "readonly"
+    },
+    "rules": {
+      "key-spacing": [
+        "error",
+        {
+          "mode": "minimum"
+        }
+      ],
+      "comma-dangle": [
+        "error",
+        {
+          "arrays": "always-multiline",
+          "objects": "always-multiline"
+        }
+      ],
+      "no-multi-spaces": [
+        "error",
+        {
+          "exceptions": {
+            "ObjectExpression": true,
+            "ArrayExpression": true,
+            "IfStatement": true
+          }
+        }
+      ]
+    }
+  },
   "scripts": {
-    "test": "standard && mocha --reporter spec && node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*",
+    "test": "standardx && mocha --reporter spec && node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*",
     "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*",
-    "standard": "standard",
+    "standardx": "standardx",
     "unit": "mocha --reporter spec"
   },
   "repository": {
@@ -34,6 +65,6 @@
     "coveralls": "^3.1.0",
     "istanbul": "^0.4.5",
     "mocha": "^8.0.1",
-    "standard": "^14.3.4"
+    "standardx": "^5.0.0"
   }
 }
