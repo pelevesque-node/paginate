@@ -27,7 +27,7 @@ https://www.npmjs.com/package/@pelevesque/paginate
 ## Tests
 
 Command                      | Description
----------------------------- | ------------
+---------------------------- | ---------------
 `npm test` or `npm run test` | all tests below
 `npm run cover`              | coverage
 `npm run standardx`          | standardx
@@ -88,6 +88,8 @@ Copyright (c) 2018-2020, Pierre-Emmanuel Lévesque
 
 MIT
 
+</hr>
+
 <div align="center">
-  <sub>Built with ❤︎ by <a href="https://github.com/pelevesque">Pierre-Emmmanuel Lévesque</a></sub>
+  Built with ❤︎ by <a href="https://github.com/pelevesque">Pierre-Emmmanuel Lévesque</a>
 </div>
