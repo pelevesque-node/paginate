@@ -38,7 +38,7 @@
     }
   },
   "scripts": {
-    "test": "standardx && mocha --reporter spec && node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*",
+    "test": "standardx && mocha --reporter spec",
     "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*",
     "standardx": "standardx",
     "unit": "mocha --reporter spec"

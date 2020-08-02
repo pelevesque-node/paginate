@@ -27,9 +27,9 @@ https://www.npmjs.com/package/@pelevesque/paginate
 ## Tests
 
 Command                      | Description
----------------------------- | ---------------
-`npm test` or `npm run test` | all tests below
-`npm run cover`              | coverage
+---------------------------- | ----------------------
+`npm test` or `npm run test` | standardx + unit tests
+`npm run cover`              | unit tests + coverage
 `npm run standardx`          | standardx
 `npm run unit`               | unit tests
 
